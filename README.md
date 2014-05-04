@@ -19,3 +19,8 @@ The app itself is data driven from the Markdown files in the ["/src" directory](
 
 Try [Prose.io](http://prose.io) with your Github account.
 
+#### Want to run this locally?
+
+- Download and install Heroku's toolbelt: [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
+- Then run `foreman start`
+- Open your browser to `http://localhost:5000`
