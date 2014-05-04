@@ -3,6 +3,8 @@ Tech-sas Playbook
 
 ### JavaScript in the front, Markdown in the back.
 
+Live app running at [http://techsas-playbook.herokuapp.com/](http://techsas-playbook.herokuapp.com/)
+
 ![http://cl.ly/image/3b1j470j2R1y/mullet-ratio.jpg](http://cl.ly/image/3b1j470j2R1y/mullet-ratio.jpg)
 
 This is our playbook for launching, operating, *ing "Welcome to Tech-sas".
