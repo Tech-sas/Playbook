@@ -1,0 +1,43 @@
+{
+  "name": "academy-campus-playbook",
+  "version": "0.0.0",
+  "description": "The Academy Campus Playbook - Driven by searchable markdown files.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theironyard/academy-campus-playbook.git"
+  },
+  "keywords": [
+    "playbook",
+    "js",
+    "metalsmith",
+    "markdown",
+    "md"
+  ],
+  "author": "Eric Dodds and Matt Keas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theironyard/academy-campus-playbook/issues"
+  },
+  "homepage": "https://github.com/theironyard/academy-campus-playbook",
+  "dependencies": {
+    "metalsmith": "^0.6.0",
+    "metalsmith-templates": "^0.4.0",
+    "metalsmith-collections": "^0.4.0",
+    "handlebars": "^2.0.0-alpha.2",
+    "myth": "^0.3.4",
+    "express": "^4.1.1",
+    "express-session": "^1.0.4",
+    "cookie-parser": "^1.0.1",
+    "body-parser": "^1.0.2",
+    "method-override": "^1.0.0",
+    "metalsmith-watch": "0.0.4",
+    "watch": "^0.10.0"
+  }
+}

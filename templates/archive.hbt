@@ -1,0 +1,9 @@
+[{{#each collections.archive}}
+    {
+        "title": "{{this.title}}",
+        "dir": "{{this.dir}}",
+        "extname": "{{this.extname}}",
+        "filename": "{{this.filename}}",
+        "contents": "{{jsonEscape this.contents}}"
+    }{{#if @last}}{{else}},{{/if}}
+{{/each}}]
