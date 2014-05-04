@@ -99,3 +99,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Arvo", serif;
   font-weight: 400;
 }
+
+
+
+header{
+  border-bottom: 1px solid #999;
+}
