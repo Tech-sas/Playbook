@@ -1,9 +1,13 @@
 Tech-sas Playbook
 =======================
 
-### JavaScript in the front, Markdown in the back.
-
 Live app running at [http://techsas-playbook.herokuapp.com/](http://techsas-playbook.herokuapp.com/)
+
+---
+
+This is a single page app to facilitate sharing information to attendants of [Welcome to Tech-sas, a Hackathon by the Houston Community, for the Community](http://techsas.co).
+
+### JavaScript in the front, Markdown in the back.
 
 ![http://cl.ly/image/3b1j470j2R1y/mullet-ratio.jpg](http://cl.ly/image/3b1j470j2R1y/mullet-ratio.jpg)
 
