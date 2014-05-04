@@ -17,5 +17,5 @@ The app itself is data driven from the Markdown files in the ["/src" directory](
 
 #### Want to edit content in your browser?
 
-Try [Prose.io](http://prose.io) with you Github account.
+Try [Prose.io](http://prose.io) with your Github account.
 
