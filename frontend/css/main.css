@@ -672,6 +672,7 @@ p + p {
     z-index: 1;
     backface-visibility: hidden;
     overflow: hidden;
+    border-bottom: 1px solid var(gray-light);
 }
 .header > img {
     /*height:6.25rem;*/
