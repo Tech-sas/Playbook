@@ -27,7 +27,6 @@ body {
     transition: opacity .5s ease;
 }
 
-
 /**
  *
  * =======================================================================
@@ -164,6 +163,22 @@ blockquote {
     background-color: #ededed;
     border-left: 1em #ddd solid;
     white-space: pre-line;
+}
+
+blockquote {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    padding:1em;
+    background-color: #ededed;
+    border-left: 1em #ddd solid;
+    margin-left:0;
+}
+
+blockquote *:last-child {
+    margin-bottom: 0;
+}
+
+blockquote a:hover {
+    color: var(red) !important;
 }
 
 /**
@@ -663,7 +678,7 @@ p + p {
     width: 6.25rem;
     margin: 0 3.75rem;
 }
-.header > h2 {
+.header > h4 {
     margin:0;
     color: var(red);
     width: calc(100% - 15rem);
@@ -748,6 +763,40 @@ p + p {
     padding: 8em 1em 5em 15em;
     backface-visibility: hidden;
 }
+
+/**
+ * ----------------------------------------------------- links
+ */
+
+.header a, .content a {
+    color: var(red);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: all .25s ease;
+    padding: .15em .25em;
+    backface-visibility: hidden;
+    border-bottom: .075em solid var(red);
+}
+.header a::after, .content a::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height:0;
+    width: 100%;
+    bottom:0;
+    left:0;
+    background: var(red);
+    transition: all .25s var(elastic);
+    backface-visibility: hidden;
+}
+.header a:hover::after, .content a:hover::after {
+    height: 100%;
+}
+.header a:hover, .content a:hover {
+    color: white;
+}
+
 
 .highlighted {
     background-color: color(var(red) a(50%));
