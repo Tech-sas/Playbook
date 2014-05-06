@@ -25,6 +25,7 @@ Try [Prose.io](http://prose.io) with your Github account.
 
 #### Want to run this locally?
 
+- run `npm install` to install dependencies
 - Download and install Heroku's toolbelt: [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
 - Then run `foreman start`
 - Open your browser to `http://localhost:5000`
