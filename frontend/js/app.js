@@ -4,6 +4,9 @@
         },
         {
             url: '/css/main.css'
+        },
+        {
+            url: '/css/skin.css'
         }
     ];
 
