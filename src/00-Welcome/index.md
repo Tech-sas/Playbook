@@ -19,6 +19,10 @@ Our volunteer team of mentors will lead small groups through a short instruction
 
 **Follow our event, mentors, and get updates, info, the schedule, address, and more!** Check out our Lanyrd event page: [lanyrd](http://lanyrd.com/2014/welcometotechsas/)
 
+- [Schedule for Welcome to Tech-sas on Lanyrd](http://lanyrd.com/2014/welcometotechsas/schedule/)
+- [Speaker list for Welcome to Tech-sas on Lanyrd](http://lanyrd.com/2014/welcometotechsas/speakers/)
+
+
 **Got a question?** Ask a mentor, tweet out to [#welcometotechsas](https://twitter.com/search?q=%23welcometotechsas), or just flap your arms and make Angry Birds noises until someone questions your sanity.
 
 Thank you for helping us nurture something special.
