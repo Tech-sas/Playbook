@@ -19,7 +19,7 @@ The topics here will be focused around:
 - Print layout, HTML Layout (newspaper analogy)
 - HTML tags
 - A Basic HTML page ([www.houstonchronicle.com](http://www.houstonchronicle.com/))
-- "Layouts" - _block vs. inline vs. inline-block vs. table ..._ - [http://learnlayout.com/](http://learnlayout.com/)
+- "Layouts" - _block vs. inline vs. inline-block vs. table ..._ - [learnlayout.com](http://learnlayout.com/)
 - Chrome Walkthrough (Inspect elements and highlight)
 
 **What is markup?**
