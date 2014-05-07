@@ -29,3 +29,9 @@ Try [Prose.io](http://prose.io) with your Github account.
 - Download and install Heroku's toolbelt: [https://toolbelt.heroku.com/](https://toolbelt.heroku.com/)
 - Then run `foreman start`
 - Open your browser to `http://localhost:5000`
+
+#### Shoutouts about "Welcome to Tech-sas"
+
+- [StartupDigest)(http://us1.campaign-archive1.com/?u=92be899ef5a892c60b4a6cd97&id=49f16c2093&e=16e90952db)
+- http://techsas.co/
+- http://lanyrd.com/2014/welcometotechsas/

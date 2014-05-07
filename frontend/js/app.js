@@ -35,7 +35,7 @@
     // },
 
     // UNCOMMENT to turn on loading cached files from Local Storage (performance boost √)
-    // loader.textInjection = true;
+    loader.textInjection = true;
 
     loader.load.apply(loader, styles.concat(js)).then(function() {
         extend(win, {
