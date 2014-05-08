@@ -373,8 +373,9 @@ function App() {
 }
 
 App.prototype.loader = new Loader();
-App.prototype.listTemplate = "{{~it :value:index}}<li><a href='#/{{=value.url}}'><i>{{=value.tag}}</i> {{=value.title}}</a></li>{{~}}";
+App.prototype.listTemplate = "{{~it :value:index}}<li><a href='#/{{=value.page_url}}'><i>{{=value.tag}}</i> {{=value.title}}</a></li>{{~}}";
 App.prototype.selectors = {
+    title: '.title',
     sidebar: '.sidebar',
     header: '.header',
     content: '.content',
@@ -405,10 +406,12 @@ App.prototype.setArchive = function(data) {
         item.html = marked(item.contents);
         item.contents = item.contents.replace(/[^0-9a-z ']/igm, ' ');
         item.url = (item.dir + '/' + item.filename + item.extname).replace('/', '--');
+        item.page_url = (item.dir).replace('/', '--');
         var tag = /\d+/ig.exec(item.dir);
         tag = tag.length ? tag[0] : '00';
         item.tag = tag;
         item.title = item.title || item.dir.replace(/^\d+-/, '').replace(/-/igm, ' ');
+        item.type = (item.type)? item.type.split(',') : [];
         /// set tag and title
     });
     self.ready.done();
@@ -461,7 +464,7 @@ App.prototype.initEvents = function() {
 
 App.prototype.find = function(filename) {
     var selectedItems = _.filter(this.archive, function(item) {
-        return (item.dir + '/' + item.filename + item.extname).replace('/', '--') === filename;
+        return (item.dir + '/' + item.filename + item.extname) === (filename + '/' + item.filename + item.extname);
     });
     return selectedItems.length ? selectedItems[0] : false;
 }
@@ -512,7 +515,7 @@ App.prototype.showFirst = function() {
     var self = this;
     this.ready.then(function() {
         if (!self.archive.length) return;
-        self.show(self.archive[0].url);
+        self.show(self.archive[0].page_url);
     });
 }
 
@@ -528,6 +531,8 @@ App.prototype.setContent = function(article, section, force) {
             } else {
                 scrollBodyTo(section_offset, 0);
             }
+        }else{
+            scrollBodyTo(0, 0);
         }
     }
 
@@ -538,6 +543,7 @@ App.prototype.setContent = function(article, section, force) {
             $.write(function() {
                 $.removeClass(self.elements.content, 'hidden');
                 self.setActiveItem(article);
+                self.setTitle(article);
                 cb && cb();
             });
         }, 250)();
@@ -549,15 +555,61 @@ App.prototype.setContent = function(article, section, force) {
 }
 
 App.prototype.setActiveItem = function(selected, _class) {
+    var self = this;
     _class = _class || 'active';
-    var url = selected ? selected.url : null;
+    var url = selected ? selected.page_url : null;
     _.each(this.elements.ul.children, function(el) {
-        if (!url || el.children[0].href.indexOf(url) == -1) {
+        if (!url || el.children[0].href.split('#/')[1] !== url) {
             $.hasClass(el, _class) && $.removeClass(el, _class);
         } else {
             !$.hasClass(el, _class) && $.addClass(el, _class);
+            self.setSubmenu(el, url);
         }
     });
+}
+
+App.prototype.setSubmenu = function(menu_item_el, page_url) {
+
+
+    if(!menu_item_el.querySelectorAll('ul').length) {
+
+        var self = this;
+        var templateFn = doT.template(self.listTemplate);
+        var h2s = self.elements.content.querySelectorAll('h2');
+
+        if(h2s.length) {
+
+            var a = 97;
+            var charArray = [];
+            for (var i = 0; i<26; i++) {
+                charArray.push(String.fromCharCode(a + i));
+            }
+
+            var submenu = [];
+            _.each(h2s, function(el, index) {
+                submenu.push({
+                    page_url: page_url + '/#' + el.id,
+                    tag: charArray[index],
+                    title: el.innerText
+                });
+            });
+
+            var resultHtml = templateFn(submenu || {});
+            var submenuList = document.createElement('ul');
+            submenuList.innerHTML = resultHtml;
+            debounce(function() {
+                menu_item_el.appendChild(submenuList);
+            }, 50)();
+        }
+    }
+}
+
+App.prototype.setTitle = function(selected) {
+    if(this.elements.title) {
+        this.elements.title.innerHTML = selected.title;
+    }
+
+    setTitle(selected.title);
 }
 
 App.prototype.setFilteredItems = function(filtered) {

@@ -1,6 +1,7 @@
 [{{#each collections.archive}}
     {
         "title": "{{this.title}}",
+        "type": "{{this.type}}",
         "dir": "{{this.dir}}",
         "extname": "{{this.extname}}",
         "filename": "{{this.filename}}",
