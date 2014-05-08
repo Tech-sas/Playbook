@@ -1,14 +1,11 @@
 !(function(win, undefined) {
     var styles = [{
-            url: '/css/normalize.css'
-        },
-        {
-            url: '/css/main.css'
-        },
-        {
-            url: '/css/skin.css'
-        }
-    ];
+        url: '/css/normalize.css'
+    }, {
+        url: '/css/main.css'
+    }, {
+        url: '/css/skin.css'
+    }];
 
     var js = [{
         url: '/js/polyfills.js'

@@ -1,171 +1,87 @@
 /**
  * ----------------------------------------------------- fonts
  */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+ @font-face {
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxuw_rQOTGi-AJs5XCWaKIhU.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxuw_rQOTGi-AJs5XCWaKIhU.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
 }
 @font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 800;
-  src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxsBo4hlZyBvkZICS3KpNonM.woff) format('woff');
-}
-
-
-
-@font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+    font-family:'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxsBo4hlZyBvkZICS3KpNonM.woff) format('woff');
 }
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+    font-family:'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Arvo'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/BM-nqL-L5PgjKPDNaleWB_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 @font-face {
-  font-family: 'Arvo';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Arvo Italic'), local('Arvo-Italic'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/ui4L3MaHUbARhH-m5bxHRevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+    font-family:'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arvo Bold'), local('Arvo-Bold'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/_OKjjqM9ed2qvTR07QdjWwLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
 @font-face {
-  font-family: 'Arvo';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Arvo Bold Italic'), local('Arvo-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/Vj6JEk1YZr8j8R8H2j0b-rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+    font-family:'Arvo';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Arvo Italic'), local('Arvo-Italic'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/ui4L3MaHUbARhH-m5bxHRevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
 }
-
-
-/* */
-body{
-  font-family:"Open Sans", sans-serif;
-  font-weight: 400;
-}
-.sidebar{
-  width: 18em;
-  height: 100%;
-}
-.sidebar > ul li{
-  font-size: 22px;
-}
-.sidebar > ul li ul li{
-  font-size: 0.75em;
-}
-.sidebar > ul li ul{
-  transition-property: all;
-  transition-duration: .35s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  max-height: 0;
-  overflow: hidden;
-}
-.sidebar > ul li.active ul{
-  max-height: 5em;
-}
-.sidebar > ul li.active ul li i{
-  background-color: #f2f4f5;
-  color: #adb8c4;
-}
-.sidebar > ul li.active ul li.active i{
-  background-color: #f2f4f5;
-  color: #adb8c4;
-}
-.sidebar > ul li i{
-  font-weight: 100;
-}
-.sidebar .logo{
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-}
-.content{
-  padding: 8em 1em 5em 20em;
-}
-.content h2{
-  margin-top: 1em;
-}
-
-.social{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: right;
-  float: right;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-}
-p + ul{
-  margin-top: -1em;
-}
-
-.header{
-  padding: 1em 1em 1em 20em;
-  right: 0;
-  left: auto;
-}
-.header h1{
-  line-height: 1.5em;
-}
-
-.header a, .content a{
-  display: inline;
-  line-height: 2em;
-  color: #444;
-  border-bottom: .15em solid rgb(188,52,45);
+@font-face {
+    font-family:'Arvo';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Arvo Bold Italic'), local('Arvo-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/Vj6JEk1YZr8j8R8H2j0b-rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }

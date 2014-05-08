@@ -377,7 +377,6 @@ App.prototype.listTemplate = "{{~it :value:index}}<li><a href='#/{{=value.page_u
 App.prototype.selectors = {
     title: '.title',
     sidebar: '.sidebar',
-    header: '.header',
     content: '.content',
     ul: '.sidebar > ul.optimized'
 }
@@ -411,7 +410,7 @@ App.prototype.setArchive = function(data) {
         tag = tag.length ? tag[0] : '00';
         item.tag = tag;
         item.title = item.title || item.dir.replace(/^\d+-/, '').replace(/-/igm, ' ');
-        item.type = (item.type)? item.type.split(',') : [];
+        item.type = (item.type) ? item.type.split(',') : [];
         /// set tag and title
     });
     self.ready.done();
@@ -440,13 +439,13 @@ App.prototype.init = function() {
 
 App.prototype.initEvents = function() {
     var self = this;
-    $.on('keyup', '.filter_articles', function() {
-        self.filter(this.value);
-    }, this.elements.sidebar)
-    $.on('click', '.filter_articles', function() {
-        this.value = '';
-        self.filter(this.value);
-    }, this.elements.sidebar)
+    // $.on('keyup', '.filter_articles', function() {
+    //     self.filter(this.value);
+    // }, this.elements.sidebar)
+    // $.on('click', '.filter_articles', function() {
+    //     this.value = '';
+    //     self.filter(this.value);
+    // }, this.elements.sidebar)
     $.on('click', 'a', function(e) {
         var existsOnPage = null,
             hash = this.href.replace(location.origin + '/', '');
@@ -526,12 +525,12 @@ App.prototype.setContent = function(article, section, force) {
         if (section) {
             var _section = document.querySelector(section);
             if (_section) {
-                var section_offset = getOffset(_section).top - self.elements.header.offsetHeight - 10;
+                var section_offset = getOffset(_section).top - 10;
                 scrollBodyTo(section_offset, 150);
             } else {
                 scrollBodyTo(section_offset, 0);
             }
-        }else{
+        } else {
             scrollBodyTo(0, 0);
         }
     }
@@ -569,19 +568,17 @@ App.prototype.setActiveItem = function(selected, _class) {
 }
 
 App.prototype.setSubmenu = function(menu_item_el, page_url) {
-
-
-    if(!menu_item_el.querySelectorAll('ul').length) {
+    if (!menu_item_el.querySelectorAll('ul').length) {
 
         var self = this;
         var templateFn = doT.template(self.listTemplate);
         var h2s = self.elements.content.querySelectorAll('h2');
 
-        if(h2s.length) {
+        if (h2s.length) {
 
             var a = 97;
             var charArray = [];
-            for (var i = 0; i<26; i++) {
+            for (var i = 0; i < 26; i++) {
                 charArray.push(String.fromCharCode(a + i));
             }
 
@@ -605,7 +602,7 @@ App.prototype.setSubmenu = function(menu_item_el, page_url) {
 }
 
 App.prototype.setTitle = function(selected) {
-    if(this.elements.title) {
+    if (this.elements.title) {
         this.elements.title.innerHTML = selected.title;
     }
 
