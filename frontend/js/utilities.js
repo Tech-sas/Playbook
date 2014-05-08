@@ -601,8 +601,6 @@ App.prototype.setSubmenu = function(menu_item_el, page_url) {
                 menu_item_el.appendChild(submenuList);
             }, 50)();
         }
-    }else{
-
     }
 }
 
