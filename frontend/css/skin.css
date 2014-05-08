@@ -102,6 +102,27 @@ body{
 .sidebar > ul li{
   font-size: 22px;
 }
+.sidebar > ul li ul li{
+  font-size: 0.75em;
+}
+.sidebar > ul li ul{
+  transition-property: all;
+  transition-duration: .35s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  max-height: 0;
+  overflow: hidden;
+}
+.sidebar > ul li.active ul{
+  max-height: 5em;
+}
+.sidebar > ul li.active ul li i{
+  background-color: #f2f4f5;
+  color: #adb8c4;
+}
+.sidebar > ul li.active ul li.active i{
+  background-color: #f2f4f5;
+  color: #adb8c4;
+}
 .sidebar > ul li i{
   font-weight: 100;
 }
@@ -112,6 +133,9 @@ body{
 }
 .content{
   padding: 8em 1em 5em 20em;
+}
+.content h2{
+  margin-top: 1em;
 }
 
 .social{
@@ -126,7 +150,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Arvo", serif;
   font-weight: 400;
 }
-
+p + ul{
+  margin-top: -1em;
+}
 
 .header{
   padding: 1em 1em 1em 20em;

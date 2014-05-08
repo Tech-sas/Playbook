@@ -472,10 +472,7 @@ App.prototype.find = function(filename) {
 App.prototype.show = function(filename, section, force) {
     var self = this;
     this.ready.then(function() {
-        console.log(filename);
-        console.log(section);
         var selected = self.find(filename);
-        console.log(selected);
         self.selected = selected;
         if (!selected) {
             window.location = '#/';
@@ -558,21 +555,59 @@ App.prototype.setContent = function(article, section, force) {
 }
 
 App.prototype.setActiveItem = function(selected, _class) {
+    var self = this;
     _class = _class || 'active';
     var url = selected ? selected.page_url : null;
     _.each(this.elements.ul.children, function(el) {
-        if (!url || el.children[0].href.indexOf(url) == -1) {
+        if (!url || el.children[0].href.split('#/')[1] !== url) {
             $.hasClass(el, _class) && $.removeClass(el, _class);
         } else {
             !$.hasClass(el, _class) && $.addClass(el, _class);
+            self.setSubmenu(el, url);
         }
     });
 }
 
+App.prototype.setSubmenu = function(menu_item_el, page_url) {
+
+
+    if(!menu_item_el.querySelectorAll('ul').length) {
+
+        var self = this;
+        var templateFn = doT.template(self.listTemplate);
+        var h2s = self.elements.content.querySelectorAll('h2');
+
+        if(h2s.length) {
+
+            var a = 97;
+            var charArray = [];
+            for (var i = 0; i<26; i++) {
+                charArray.push(String.fromCharCode(a + i));
+            }
+
+            var submenu = [];
+            _.each(h2s, function(el, index) {
+                submenu.push({
+                    page_url: page_url + '/#' + el.id,
+                    tag: charArray[index],
+                    title: el.innerText
+                });
+            });
+
+            var resultHtml = templateFn(submenu || {});
+            var submenuList = document.createElement('ul');
+            submenuList.innerHTML = resultHtml;
+            debounce(function() {
+                menu_item_el.appendChild(submenuList);
+            }, 50)();
+        }
+    }else{
+
+    }
+}
 
 App.prototype.setTitle = function(selected) {
-    console.log(selected);
-    if(this.elements.title){
+    if(this.elements.title) {
         this.elements.title.innerHTML = selected.title;
     }
 
