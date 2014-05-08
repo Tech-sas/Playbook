@@ -1,4 +1,6 @@
-### Tools and Resources
+---
+type: [ coach, beginner, advanced]
+---
 
 This is a list of tools, software, and resources that can be used.
 

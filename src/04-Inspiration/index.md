@@ -1,10 +1,10 @@
-### Inspiration
+---
+type: [ coach, beginner, advanced]
+---
 
 This is a list of inspiring sites, experiments, apps, projects, or otherwise anything that gets those creative brain-cells churning.
 
 > If you haven't, please check out the [Tools and Resources](/#/01-Tools-and-Resources--index.md) page.
-
-#### Such Inspiring. Very Code. Wow. Much amaze.
 
 - [Kin](http://kinhr.com/)
 - [codepen.io/andreasstorm/full/qEgLt](http://codepen.io/andreasstorm/full/qEgLt)

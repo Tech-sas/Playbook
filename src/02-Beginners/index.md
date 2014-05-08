@@ -1,4 +1,6 @@
-### Beginners
+---
+type: [ coach ]
+---
 
 This is a list of topics, with links/resources and discussion points for the Beginners discussion.
 

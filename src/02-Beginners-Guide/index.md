@@ -1,5 +1,6 @@
-
-# Beginners Guide
+---
+type: [ beginner ]
+---
 
 Hello and welcome to the Beginner's Guide to the fundamentals of web development!
 

@@ -373,8 +373,9 @@ function App() {
 }
 
 App.prototype.loader = new Loader();
-App.prototype.listTemplate = "{{~it :value:index}}<li><a href='#/{{=value.url}}'><i>{{=value.tag}}</i> {{=value.title}}</a></li>{{~}}";
+App.prototype.listTemplate = "{{~it :value:index}}<li><a href='#/{{=value.page_url}}'><i>{{=value.tag}}</i> {{=value.title}}</a></li>{{~}}";
 App.prototype.selectors = {
+    title: '.title',
     sidebar: '.sidebar',
     header: '.header',
     content: '.content',
@@ -405,10 +406,12 @@ App.prototype.setArchive = function(data) {
         item.html = marked(item.contents);
         item.contents = item.contents.replace(/[^0-9a-z ']/igm, ' ');
         item.url = (item.dir + '/' + item.filename + item.extname).replace('/', '--');
+        item.page_url = (item.dir).replace('/', '--');
         var tag = /\d+/ig.exec(item.dir);
         tag = tag.length ? tag[0] : '00';
         item.tag = tag;
         item.title = item.title || item.dir.replace(/^\d+-/, '').replace(/-/igm, ' ');
+        item.type = (item.type)? item.type.split(',') : [];
         /// set tag and title
     });
     self.ready.done();
@@ -461,7 +464,7 @@ App.prototype.initEvents = function() {
 
 App.prototype.find = function(filename) {
     var selectedItems = _.filter(this.archive, function(item) {
-        return (item.dir + '/' + item.filename + item.extname).replace('/', '--') === filename;
+        return (item.dir + '/' + item.filename + item.extname) === (filename + '/' + item.filename + item.extname);
     });
     return selectedItems.length ? selectedItems[0] : false;
 }
@@ -469,7 +472,10 @@ App.prototype.find = function(filename) {
 App.prototype.show = function(filename, section, force) {
     var self = this;
     this.ready.then(function() {
+        console.log(filename);
+        console.log(section);
         var selected = self.find(filename);
+        console.log(selected);
         self.selected = selected;
         if (!selected) {
             window.location = '#/';
@@ -512,7 +518,7 @@ App.prototype.showFirst = function() {
     var self = this;
     this.ready.then(function() {
         if (!self.archive.length) return;
-        self.show(self.archive[0].url);
+        self.show(self.archive[0].page_url);
     });
 }
 
@@ -528,6 +534,8 @@ App.prototype.setContent = function(article, section, force) {
             } else {
                 scrollBodyTo(section_offset, 0);
             }
+        }else{
+            scrollBodyTo(0, 0);
         }
     }
 
@@ -538,6 +546,7 @@ App.prototype.setContent = function(article, section, force) {
             $.write(function() {
                 $.removeClass(self.elements.content, 'hidden');
                 self.setActiveItem(article);
+                self.setTitle(article);
                 cb && cb();
             });
         }, 250)();
@@ -550,7 +559,7 @@ App.prototype.setContent = function(article, section, force) {
 
 App.prototype.setActiveItem = function(selected, _class) {
     _class = _class || 'active';
-    var url = selected ? selected.url : null;
+    var url = selected ? selected.page_url : null;
     _.each(this.elements.ul.children, function(el) {
         if (!url || el.children[0].href.indexOf(url) == -1) {
             $.hasClass(el, _class) && $.removeClass(el, _class);
@@ -558,6 +567,16 @@ App.prototype.setActiveItem = function(selected, _class) {
             !$.hasClass(el, _class) && $.addClass(el, _class);
         }
     });
+}
+
+
+App.prototype.setTitle = function(selected) {
+    console.log(selected);
+    if(this.elements.title){
+        this.elements.title.innerHTML = selected.title;
+    }
+
+    setTitle(selected.title);
 }
 
 App.prototype.setFilteredItems = function(filtered) {
