@@ -97,42 +97,41 @@ h6 {
     margin-bottom: 0.4125em;
 }
 
-h1,
 .alpha {
     font-size: 60px;
     font-size: 3.33333rem; /* 60 / 18 = 3.3333 */
     margin-bottom: 0.495em;
 }
 
-h2,
+h1,
 .beta {
     font-size: 48px;
     font-size: 2.6667rem; /* 48 / 18 = 2.6667 */
     margin-bottom: 0.61875rem;
 }
 
-h3,
+h2,
 .gamma {
     font-size: 36px;
     font-size: 2rem; /* 36 / 18 = 2 */
     margin-bottom: 0.825em;
 }
 
-h4,
+h3,
 .delta {
     font-size: 24px;
     font-size: 1.3333333333333333rem; /* 24 / 18 = 1.3333 */
     margin-bottom: 1.2375em;
 }
 
-h5,
+h4,
 .epsilon {
     font-size: 21px;
     font-size: 1.16667rem; /* 21 / 18 = 1.1667 */
     margin-bottom: 1.4142857142857141em; /* measure( base font-size(18) * base line-height(1.65) ) / current font-size(21) = margin-bottom(1.4142857142857141) */
 }
 
-h6,
+h5, h6,
 .zeta {
     font-size: 18px;
     font-size: 1rem; /* 18 = 18 × 1 */
@@ -757,7 +756,6 @@ p + p {
     display: block;
 }
 
-
 .content {
     padding: 8.5em 1em 5em 20em;
     backface-visibility: hidden;
@@ -783,6 +781,7 @@ p + ul {
 }
 .content h2 {
     margin-top: 1em;
+    background-color: var(gray-light);
 }
 
 

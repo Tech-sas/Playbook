@@ -164,6 +164,7 @@ app.get('/', function(req, res) {
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.static(path.join(__dirname, 'frontend')));
+app.use(express.static(path.join(__dirname, 'src_images')));
 
 app.listen(app.get('port'), function() {
     console.log('now listening on:', app.get('port'));
