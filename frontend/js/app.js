@@ -2,9 +2,9 @@
     var styles = [{
         url: '/css/normalize.css'
     }, {
-        url: '/css/main.css'
-    }, {
         url: '/css/skin.css'
+    }, {
+        url: '/css/main.css'
     }];
 
     var js = [{
