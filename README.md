@@ -18,7 +18,7 @@ The app itself is data driven from the Markdown files in the ["/src" directory](
 1. The ["/src" directory](./src) should consist of a series of folders with numeric names, prefixed with chapter numbers.
 2. The app will display a tag and title for each main folder.
 3. Don't delete [archive.md](./src/archive.md) in the ["/src" directory](./src).
-4. Submenus for each section is generated from each .md's h2's
+4. Submenus for each section are generated from each .md's h2's
 5. When making edits to the frontend (css & js files):
   1. Go to "Resources", "Local Storage"
   2. Delete the files you updated
