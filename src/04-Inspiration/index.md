@@ -1,11 +1,13 @@
-### Inspiration
+---
+type: [ coach, beginner, advanced]
+---
 
 This is a list of inspiring sites, experiments, apps, projects, or otherwise anything that gets those creative brain-cells churning.
 
 > If you haven't, please check out the [Tools and Resources](/#/01-Tools-and-Resources--index.md) page.
 
-#### Such Inspiring. Very Code. Wow. Much amaze.
-
+- [Codrop Tutorials](http://tympanus.net/codrops/category/tutorials/)
+- [Codrop Blueprints](http://tympanus.net/codrops/category/blueprints/)
 - [Kin](http://kinhr.com/)
 - [codepen.io/andreasstorm/full/qEgLt](http://codepen.io/andreasstorm/full/qEgLt)
 - [codepen.io/HHSnopek/full/bFqgE](http://codepen.io/HHSnopek/full/bFqgE)

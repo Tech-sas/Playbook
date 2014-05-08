@@ -2,7 +2,7 @@
 type: [ beginner ]
 ---
 
-Hello and welcome to the Beginner's Guide to the fundamentals of web development!
+Hello! You are about to learn about making a webpage using HTML and CSS.
 
 ## Why the web?
 
@@ -95,10 +95,4 @@ Notice that the "Hello World!" is bigger than the rest of the text.
 This is because we wrapped "Hello World!" in `<h1>` and `</h1>`, which
 is used to denote top-level header text.
 
-## Use the Inspector!
-
-### Do
-
-### See
-
-### Review
+In the next section, we will learn more about different HTML tags.

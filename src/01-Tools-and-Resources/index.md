@@ -1,4 +1,6 @@
-### Tools and Resources
+---
+type: [ coach, beginner, advanced]
+---
 
 This is a list of tools, software, and resources that can be used.
 
@@ -8,7 +10,7 @@ If you are a **beginner**, you can setup three things that we will use:
 - The cloud-storage service [Dropbox](https://www.dropbox.com/)
 - And the text-editor, [Sublime Text](http://www.sublimetext.com/2) (_just use the free trial_)
 
-We will also use the service [Pancake.io](https://pancake.io/), which will serve a real website fro your Dropbox folder.
+We will also use the service [Pancake.io](https://pancake.io/), which will serve a real website from your Dropbox folder.
 
 More **advanced developers** may be interested in putting something up on one of these services:
 

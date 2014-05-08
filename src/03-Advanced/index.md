@@ -1,4 +1,6 @@
-### Advanced
+---
+type: [ coach ]
+---
 
 This is a list of topics, with links/resources and discussion points for the Advanced discussions.
 
