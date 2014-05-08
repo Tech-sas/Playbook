@@ -1,5 +1,5 @@
 ---
-type: [ coach, beginner, advanced]
+type: [ coach, beginner, advanced ]
 ---
 
 This is a list of inspiring sites, experiments, apps, projects, or otherwise anything that gets those creative brain-cells churning.

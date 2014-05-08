@@ -704,7 +704,7 @@ p + p {
     background-color: var(gray-light);
     width:14em;
     height:calc(100% - 7em);
-    overflow-x: visible;
+    overflow-x: hidden;
     overflow-y: auto;
     animation: fadeIn .25s both;
     z-index: 1;

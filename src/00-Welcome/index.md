@@ -1,6 +1,6 @@
 ---
 title: Welcome to Tech-sas!
-type: [ coach, beginner, advanced]
+type: [ coach, beginner, advanced ]
 ---
 
 Howdy and welcome, city-slicker!

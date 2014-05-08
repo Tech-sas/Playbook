@@ -1,5 +1,5 @@
 ---
-type: [ coach, beginner, advanced]
+type: [ coach, beginner, advanced ]
 ---
 
 This is a list of tools, software, and resources that can be used.
@@ -24,16 +24,3 @@ For anyone curious, you can also take a look at these services in the afternoon.
 - [Parse](https://www.parse.com/) (_The Iron Yard - preferred_)
 - [Dropbox Datastore API](https://www.dropbox.com/developers/datastore/sdks/js)
 - [Amazon SDK](https://aws.amazon.com/sdkforbrowser/)
-
-Also, aside from just Twitter, Facebook, and Google APIs, you can setup apps that work with:
-
-- list REST APIs
-
-...
-
-
-<!-- ---
-
-Next: [Inspiration](/#/01-Inspiration--inspiration.md)<br>
-Previous: [Welcome](/#/00-welcome--welcome.md)
- -->
