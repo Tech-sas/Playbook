@@ -163,7 +163,7 @@ blockquote {
     font-size: .8em;
     background-color: #ededed;
     border-left: 1em #ddd solid;
-    white-space: pre-line;
+    /*white-space: pre-line;*/
 }
 
 blockquote {
@@ -668,7 +668,7 @@ p + p {
     background-color: var(gray-light);
     width:18em;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: visible;
     overflow-y: auto;
     animation: fadeIn .25s both;
     z-index: 1;
@@ -737,7 +737,8 @@ p + p {
     overflow: hidden;
 }
 .sidebar > ul li.active ul {
-    max-height: 10em;
+    max-height: 100em;
+    max-height: 100vh;
 }
 .sidebar > ul li.active ul li i {
     background-color: #f2f4f5;
@@ -782,6 +783,9 @@ p + ul {
 .content h2 {
     margin-top: 1em;
     background-color: var(gray-light);
+}
+.content img {
+    max-width: 100%;
 }
 
 
