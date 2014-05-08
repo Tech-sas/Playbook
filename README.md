@@ -32,6 +32,6 @@ Try [Prose.io](http://prose.io) with your Github account.
 
 #### Shoutouts about "Welcome to Tech-sas"
 
-- [StartupDigest)(http://us1.campaign-archive1.com/?u=92be899ef5a892c60b4a6cd97&id=49f16c2093&e=16e90952db)
+- [StartupDigest](http://us1.campaign-archive1.com/?u=92be899ef5a892c60b4a6cd97&id=49f16c2093&e=16e90952db)
 - http://techsas.co/
 - http://lanyrd.com/2014/welcometotechsas/

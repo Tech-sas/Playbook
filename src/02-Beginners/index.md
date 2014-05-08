@@ -17,6 +17,7 @@ The topics here will be focused around:
 #### HTML Basics!
 
 - Print layout, HTML Layout (newspaper analogy)
+- The DOM (https://www.youtube.com/watch?v=4Gv81XcC8iE)
 - HTML tags
 - A Basic HTML page ([www.houstonchronicle.com](http://www.houstonchronicle.com/))
 - "Layouts" - _block vs. inline vs. inline-block vs. table ..._ - [learnlayout.com](http://learnlayout.com/)

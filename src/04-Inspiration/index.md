@@ -30,3 +30,6 @@ This is a list of inspiring sites, experiments, apps, projects, or otherwise any
 - [Weather and Travel Dashboard](http://codepen.io/chrishutchinson/full/nKBds)
 - [Pretty Button!](http://codepen.io/fabricelejeune/full/vmaws)
 - [CSS3 Robot](http://codepen.io/michaellee/full/GDsqE)
+- [Rock The Boat](http://codepen.io/kevinjannis/full/aIcsy)
+- [CSS Swiss Army Knife](http://codepen.io/dougludlow/full/qiDpH)
+- [Progress Indicator](http://css-tricks.com/reading-position-indicator/)
