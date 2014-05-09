@@ -132,7 +132,9 @@ Injector.prototype.inject = function(name, dependency) {
 }
 ```
 
+Define two objects with a function `greet()`:
 
+```
 var RobotGreeter = {
   greet: function() {
     return 'Domo Arigato';
@@ -144,12 +146,13 @@ var OtherGreeter = {
       return 'That will do pig.';
     }
 };
+```
 
-// Randomly register a different greeter to show that WelcomeController is truly dynamic.
+Randomly register a different greeter to show that WelcomeController is truly dynamic:
+
+```
 var ninja = new Injector();
 ninja.inject('Greeter', Math.random() > 0.5 ? RobotGreeter : OtherGreeter);
-
-/////////////
 
 function WelcomeController(Greeter) {
     alert(Greeter.greet());
