@@ -729,6 +729,23 @@ p + p {
 .sidebar > ul li ul li {
     font-size: 0.75em;
 }
+.sidebar > ul li ul li a {
+    position: relative;
+    padding-left: 1.25em;
+    border-top: 1px solid var(gray-medium);
+}
+.sidebar > ul li ul li:first-child a {
+    border-top: none;
+}
+.sidebar > ul li ul li a i {
+    display: inline-block;
+    position: absolute;
+    top:.8em;
+    left:0;
+    height: 100%;
+    /*transform: translateY(-50%);*/
+    /*backface-visibility: hidden;*/
+}
 .sidebar > ul li ul {
     transition-property: all;
     transition-duration: .35s;
@@ -737,8 +754,8 @@ p + p {
     overflow: hidden;
 }
 .sidebar > ul li.active ul {
-    max-height: 100em;
-    max-height: 100vh;
+    max-height: 1000em;
+    max-height: 200vh;
 }
 .sidebar > ul li.active ul li i {
     background-color: #f2f4f5;
@@ -782,10 +799,19 @@ p + ul {
 }
 .content h2 {
     margin-top: 1em;
-    background-color: var(gray-light);
+    padding: .25em;
+    color:white;
+    background-color: var(red);
+    margin-left: -2rem;
+    margin-right: -1rem;
 }
 .content img {
     max-width: 100%;
+}
+.content code {
+    display: inline-block;
+    padding:.15em .25em;
+    background-color: #ededed;
 }
 
 

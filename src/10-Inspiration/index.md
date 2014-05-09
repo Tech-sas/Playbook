@@ -37,3 +37,4 @@ This is a list of inspiring sites, experiments, apps, projects, or otherwise any
 - [Progress Indicator](http://css-tricks.com/reading-position-indicator/)
 - [Bouncing 3D Box](http://codepen.io/mallendeo/full/gwAFk)
 - [programmer(Caffeine) -> Code](http://codepen.io/zerospree/full/IptKx)
+- [Tile layout](http://codepen.io/jackarmley/full/FugoJ)

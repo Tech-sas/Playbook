@@ -13,7 +13,24 @@ The topics here will be focused around:
 - Advanced HTML and CSS topics
 - Some JavaScript-y things, mostly native non-framework stuff
 
+## Vertically Centering things with CSS
+
+![](http://cl.ly/image/2t3B103x0k3a/Screen%20Shot%202014-05-09%20at%2010.46.26%20AM.png)
+
+```
+.absolutely-centered {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+```
+
 ## Responsive CSS Grids
+
+Especially when using `Bootstrap`/`ZURB`/`<insert random CSS framework here>`, CSS can sometimes feel like this:
+
+![](http://cl.ly/image/3B1h212J2219/css.gif)
 
 As an example of something using a custom grid: [Dropbox folder](https://www.dropbox.com/sh/sw9vo2ccryi412g/U5nY195nB5).
 
@@ -141,21 +158,15 @@ function WelcomeController(Greeter) {
 ninja.run(WelcomeController);
 ```
 
-## An intro to LESS
+## An intro to CSS4, and Myth.io
 
-
+[Myth.io - the CSS Post Processor of your dreams](http://www.myth.io/)
 
 ## CSS Animations
 
-- [Chris Coyier on CSS Keyframe Animations](http://css-tricks.com/snippets/css/keyframe-animation-syntax/)
-
-### Tweenable Properties
-
-- [Brad Shaw](http://css3.bradshawenterprises.com/transitions/)
-
-### CSS Transforms
-
-- [Brad Shaw](http://css3.bradshawenterprises.com/transforms/)
+- Keyframe syntax - [Chris Coyier on CSS Keyframe Animations](http://css-tricks.com/snippets/css/keyframe-animation-syntax/)
+- Tweenable Properties - [Brad Shaw](http://css3.bradshawenterprises.com/transitions/)
+- CSS Transforms - [Brad Shaw](http://css3.bradshawenterprises.com/transforms/)
 
 ## Layout Cost and High Performance CSS
 
@@ -455,10 +466,30 @@ el.style.boxShadow = "1px 1px 5px 5px red";
 
 Want to compare the speed of these? Check this guy out: [http://jsperf.com/setting-multiple-css-properties](http://jsperf.com/setting-multiple-css-properties).
 
+#### Want more? see [YouMightNotNeedjQuery](http://youmightnotneedjquery.com/)
+
 ## The Triforce - Promises, Pubsub, and Client-side Routing
+
+See [Building Your Own Single Page App Framework](http://matthiasak.github.io/Building-an-SPA-Framework/)
+
+Monolithic Frameworks vs. DIY approach:
+
+![](http://cl.ly/image/472M1a1d352d/talks-big-vs-micro-frameworks.png)
+
+## Polyfills and you
+
+- [CanIUseIt!?!?!?](http://caniuse.com)
+- [Modernizr and Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+
+## How JavaScript Prototypes Work
+
+[Link to blog post](http://www.toptal.com/javascript/javascript-prototypes-scopes-and-performance-what-you-need-to-know)
 
 ## LocalStorage
 
-## HTML5 APIs
+- [CanIUse?](http://caniuse.com/#feat=namevalue-storage)
+- [Demo](http://html5demos.com/storage)
 
 ## Chrome Debugging and Breakpoints
+
+- [Google Dev Blog](https://developers.google.com/chrome-developer-tools/docs/javascript-debugging)
