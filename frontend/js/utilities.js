@@ -446,6 +446,7 @@ App.prototype.initEvents = function() {
     //     this.value = '';
     //     self.filter(this.value);
     // }, this.elements.sidebar)
+
     $.on('click', 'a', function(e) {
         var existsOnPage = null,
             hash = this.href.replace(location.origin + '/', '');
@@ -533,6 +534,14 @@ App.prototype.setContent = function(article, section, force) {
         } else {
             scrollBodyTo(0, 0);
         }
+
+        // target = "_blank" on all content links
+        var anchors = self.elements.content.getElementsByTagName('a');
+        _(anchors).each(function(anchor){
+            if(anchor.href.indexOf('http') === 0){
+                anchor.setAttribute('target','_blank');
+            }
+        });
     }
 
     if (self.currentFilename !== article.url || force) {
