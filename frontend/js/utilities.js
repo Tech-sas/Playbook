@@ -582,7 +582,8 @@ App.prototype.setSubmenu = function(menu_item_el, page_url) {
         var self = this;
         var templateFn = doT.template(self.listTemplate);
         var h2s = self.elements.content.querySelectorAll('h2');
-
+        console.log(h2s.length);
+        console.log('h2s');
         if (h2s.length) {
 
             var a = 97;
@@ -596,7 +597,7 @@ App.prototype.setSubmenu = function(menu_item_el, page_url) {
                 submenu.push({
                     page_url: page_url + '/#' + el.id,
                     tag: charArray[index],
-                    title: el.innerText
+                    title: el.innerHTML
                 });
             });
 

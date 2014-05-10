@@ -198,7 +198,7 @@ Want to `debug` your CSS? Try Continuous Paint Mode:
 
 ## jQuery is Dead, Long Live jQuery
 
-**jQuery.** It is the heart and soul of the web developers toolkit, and more importantly the bread-and-butter of the JavaScript arsenal.
+**jQuery.** It is the heart and soul of the web developer's toolkit, and more importantly the bread-and-butter of the JavaScript arsenal.
 
 What is the first import or `<script>` tag you typically make? We're probably in the same boat, you and I.
 
