@@ -66,7 +66,7 @@ Knowledge of all modern HTML is, of course, crucial, we are not going to list al
 * `textarea`
 * `button`
 
-## What is so big about HTML5?
+## What's HTML5?
 
 HTML5 added more tags so that web developers can more easily identify content for browsers. Here are a few of the new tags:
 
