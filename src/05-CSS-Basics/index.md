@@ -4,6 +4,12 @@ type: [ beginner ]
 
 In this section, students will be styling the pages they worked on in previous section about HTML basics.
 
+## What is CSS?
+
+CSS stands for Cascading Style Sheets.
+
+Cascading because styles cascade down to their children. Style because they specify styles for our HTML elements. Sheets because they are separate files we can use with multiple webpages.
+
 ## What are styles?
 
 HTML provides the meaning for the content, but doesn't dictate how that content should be displayed in a browser. If you want to change your `h1`'s color to green, you will update it's style.
@@ -129,4 +135,34 @@ Besides adding extra meaning to the content, this is helpful when wanting to cha
 </div>
 ~~~
 
-As you can see, styles are inherited and are said to **cascade** down. 
+As you can see, styles are inherited and are said to **cascade** down.
+
+## Style Sheets
+
+What if we have styles we want to share between different webpages?
+
+Well, we can create a separate file called a **style sheet**. Create another file and called it `styles.css`. We can then link to the stylesheet in our webpage like:
+
+~~~
+<html>
+  <head>
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+  <body>
+  </body>
+</html>
+~~~
+
+Add the style sheet to all your webpages to share the styles you created.
+
+We can also download styles from designers and use them in our webpages. All we need to do is to download the css file and then link to that file in our webpage.
+
+## What is CSS3?
+
+Just like HTML5, CSS3 adds more styles for us to use.
+
+- `border-radius`
+- `box-shadow`
+- `text-shadow`
+- `text-overflow`
+- **AND MORE**
