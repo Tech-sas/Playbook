@@ -85,3 +85,14 @@
     font-weight: 700;
     src: local('Arvo Bold Italic'), local('Arvo-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/arvo/v6/Vj6JEk1YZr8j8R8H2j0b-rO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
+
+.schedule{
+    margin-bottom: 1em;
+}
+.time{
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+.event{
+
+}

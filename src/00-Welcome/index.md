@@ -20,6 +20,12 @@ Today, Tech-sans will spend the day learning basic website development, sharing 
 
 Our volunteer team of mentors will lead small groups through a short instruction this morning; and this afternoon we encourage each and every one of our attendees to build something to "take home" from the event.
 
+**Got a question?** Ask a mentor, tweet out to [#welcometotechsas](https://twitter.com/search?q=%23welcometotechsas), or just flap your arms and make Angry Birds noises until someone questions your sanity.
+
+Thank you for helping us nurture something special.
+
+## Schedule
+
 <table class="schedule">
 	<tr>
 		<td class="time">9 - 10 AM</td>
@@ -48,7 +54,23 @@ Our volunteer team of mentors will lead small groups through a short instruction
 - [Schedule for Welcome to Tech-sas on Lanyrd](http://lanyrd.com/2014/welcometotechsas/schedule/)
 - [Speaker list for Welcome to Tech-sas on Lanyrd](http://lanyrd.com/2014/welcometotechsas/speakers/)
 
+## Tools and Resources
 
-**Got a question?** Ask a mentor, tweet out to [#welcometotechsas](https://twitter.com/search?q=%23welcometotechsas), or just flap your arms and make Angry Birds noises until someone questions your sanity.
+#### Beginners
 
-Thank you for helping us nurture something special.
+- The latest version of [Google Chrome](https://www.google.com/intl/en/chrome/browser/)
+- And the text-editor, [Sublime Text](http://www.sublimetext.com/2)
+
+#### Advanced
+
+- [Heroku](https://dashboard.heroku.com/apps)
+- [Github Pages](https://pages.github.com/)
+
+For anyone curious, check out these additional tools and services.
+
+- [Pancake.io](https://pancake.io/)
+- [Meteor](https://www.meteor.com/)
+- [Firebase](https://www.firebase.com/)
+- [Parse](https://www.parse.com/) (_The Iron Yard - preferred_)
+- [Dropbox Datastore API](https://www.dropbox.com/developers/datastore/sdks/js)
+- [Amazon SDK](https://aws.amazon.com/sdkforbrowser/)

@@ -4,8 +4,6 @@ type: [ coach ]
 
 This is a list of topics, with links/resources and discussion points for the Advanced discussions.
 
-> If you haven't, please check out the [Tools and Resources](/#/01-Tools-and-Resources) page.
-
 ## Overview
 
 The topics here will be focused around:
