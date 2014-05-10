@@ -20,6 +20,29 @@ Today, Tech-sans will spend the day learning basic website development, sharing 
 
 Our volunteer team of mentors will lead small groups through a short instruction this morning; and this afternoon we encourage each and every one of our attendees to build something to "take home" from the event.
 
+<table class="schedule">
+	<tr>
+		<td class="time">9 - 10 AM</td>
+		<td class="event">Registration, Coffee + Welcomes + Sponsors</td>
+	</tr>
+	<tr>
+		<td class="time">10 - 11 AM</td>
+		<td class="event">Main presentation + group forming</td>
+	</tr>
+	<tr>
+		<td class="time">11 - 12 PM</td>
+		<td class="event">Learning with groups</td>
+	</tr>
+	<tr>
+		<td class="time">12 - 1 PM</td>
+		<td class="event">Lunch</td>
+	</tr>
+	<tr>
+		<td class="time">1 - 4 PM</td>
+		<td class="event">Learning and coding with groups</td>
+	</tr>
+</table>
+
 **Follow our event, mentors, and get updates, info, the schedule, address, and more!** Check out our Lanyrd event page: [lanyrd](http://lanyrd.com/2014/welcometotechsas/)
 
 - [Schedule for Welcome to Tech-sas on Lanyrd](http://lanyrd.com/2014/welcometotechsas/schedule/)

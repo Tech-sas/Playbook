@@ -15,7 +15,7 @@ Cascading because styles cascade down to their children. Style because they spec
 HTML provides the meaning for the content, but doesn't dictate how that content should be displayed in a browser. If you want to change your `h1`'s color to green, you will update it's style.
 
 ~~~
-  <h1 style='color: green'>I am green now!</h1>
+  <h1 style="color: green;">I am green now!</h1>
 ~~~
 
 Updating an HTML element's style using the `style` attribute, is called setting an **inline style**.
@@ -31,7 +31,7 @@ Using inline styles, change the style on your webpage using some of these option
 
 ## Hex-a-what?
 
-Browsers have been coded to understand some basic colors like red, green, blue, etc. But what about all the different shades of color out there. A computer doesn't understand "off white with a hint of green".
+Browsers have been coded to understand some basic colors like red, green, blue, etc. But what about all the different shades of color out there? A computer doesn't understand "off white with a hint of green".
 
 To set more specific colors, we provide a hexadecimal number. It sounds complex but is really quite simple. We have three different colors we mix together to form other colors. The values can be between 0 and 255.
 
@@ -58,7 +58,7 @@ You would read the hexadecimal color like: `88` red, `00` green, and `88` blue.
 
 You can also use `rgb(150, 0, 150)` to set a color. Hexadecimal is just the most common / preferred way of identifying colors. So when in Rome, do as the Romans: Use hexidecimals to identify colors.
 
-Use hexadecimal colors to change the text color and backgrounds on different HTML tags on you webpage.
+Use hexadecimal colors to change the text color and backgrounds on different HTML tags on your webpage.
 
 ## Style tag
 
@@ -93,7 +93,7 @@ Now, move your styles from being inline to being inside a `style` tag in your we
 
 Currently we can change the style of any HTML element. But what if you want to have some elements styled different than others?
 
-With html, we can set classes on our HTML elements and then style the classes. With classes we can even share styles between different HTML elements.
+With HTML, we can set classes on our HTML elements and then style the classes. With classes we can even share styles between different HTML elements.
 
 ~~~
 <style>
@@ -130,7 +130,9 @@ Besides adding extra meaning to the content, this is helpful when wanting to cha
   This is important so it is bold and has a large font size.
   <p>
     I am imporant too and inherit the style from my parent element.
-    <p>And another p tag inside this p tag inherits the same style because the style cascades down.</p>
+    <span>
+      This span tag inside the p tag inherits the same style because the style cascades down.
+    </span>
   </p>
 </div>
 ~~~

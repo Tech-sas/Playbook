@@ -97,7 +97,7 @@ This is a good time to ask your instructor about these tags.
 
 ## What's HTML5?
 
-You probably have heard of HTML5 but didn't know what the big fus is all about. HTML5 added more tags so that web developers can more easily identify content for browsers.
+You probably have heard of HTML5 but didn't know what the big fuss is all about. HTML5 added more tags so that web developers can more easily identify content for browsers.
 
 As a web developer, it is exciting because it means we have more tools in our toolbox!
 
