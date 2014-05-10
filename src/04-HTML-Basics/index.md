@@ -1,50 +1,78 @@
 ---
 type: [ beginner ]
 ---
+In this section, students will be creating their first webpages with a focus on learning HTML markup.
 
-In this section, students will be creating their first webpages with a focus on markup. Teachers will guide their students through some of the most basic html elements.
+## Breaking down a newspaper
 
-- Print layout, HTML Layout (newspaper analogy)
-- HTML tags
+Now look at a newspaper and as a group identify the different types of content.
+
+- What is the heading for the newspaper? That would be the `h1`.
+- What about images?
+- Paragraphs?
+- Subheaders?
 
 ## What is markup?
 
-Show a newspaper article and discuss how to tell a computer how to lay the article out. Identify pieces like headings, paragraphs, images. Then discuss how we need to tell the computer how to style it. Fonts, font sizes, margins, padding. This naturally leads into what markup is and CSS. This allows them to self-discover / rationalize HTML & CSS.
+Markup is a method to help a computer identify content. Markup involves wrapping content with **tags**. So if we want to identify a section of text as a paragraph, then we would wrap the text in `<p></p>` tags.
 
-## The most common tags
+~~~
+  <p>I am a paragraph of text.</p>
+~~~
 
-There are many HTML tags, each with their own use, meaning, and purpose. When building web apps, however, you'll see a few tags uses over and over again. Knowledge of all modern HTML is, of course, crucial, but make sure you're well aquainted with these ubiquitous tags in particular:
+### Remember to close tags!
+
+~~~
+  <h1>Cool awesome title!
+
+  <p>Oh no! I forgot the closing tag on my h1!</p>
+~~~
+
+~~~
+COOL FACT: Not all tags require closing tags.
+~~~
+
+## Beginner HTML tags
+
+There are many HTML tags, each with their own use, meaning, and purpose. When building web apps, however, you'll see a few tags used over and over again.
+
+Make a new webpage and try using each of these tags:
 
 * `html`
+* `body`
+* `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
+* `p`
+* `ul`
+* `ol`
+* `li`
+
+If you are having problems coming up with content for your webpage, try making a cookie recipe webpage like: http://allrecipes.com/recipe/best-chocolate-chip-cookies/
+
+
+## MOAR tags!
+
+Knowledge of all modern HTML is, of course, crucial, we are not going to list all the tags available, but here are some more common tags you will run into.
+
 * `head`
 * `title`
 * `script`
 * `link`
 * `meta`
-* `body`
-* `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
-* `p`
+* `a`
 * `span`
 * `div`
-* `a`
-* `ul`
-* `li`
 * `form`
 * `input`
 * `textarea`
 * `button`
 
-## Title
+## What is so big about HTML5?
 
-## Headings
+HTML5 added more tags so that web developers can more easily identify content for browsers. Here are a few of the new tags:
 
-## Paragraph
-
-## Unordered list
-
-## Ordered list
-
-
-~~~
-COOL QUESTION: Which of these tags require a closing tag and which don't?
-~~~
+* `article`
+* `navigation`
+* `video`
+* `header`
+* `footer`
+* `canvas`
