@@ -37,7 +37,7 @@ To set more specific colors, we provide a hexadecimal number. It sounds complex 
 
 Hexadecimal is a shorthand / computer friendly way of representing numbers between 0-255.
 
-Why 255? Because computers think in binary 1 or 0 (on or off). So data is stored in squares of little bits. 8 bits = byte. 2^16 = 256 = 255 + 1 (the 0)
+Why 255? Because computers think in binary 1 or 0 (on or off). So data is stored in squares of little bits. 8 bits = byte. 2^8 = 256 = 255 + 1 (the 0)
 
 ~~~
 Red   Green   Blue
