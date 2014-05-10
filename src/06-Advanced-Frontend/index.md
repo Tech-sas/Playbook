@@ -467,7 +467,7 @@ el.style.boxShadow = "1px 1px 5px 5px red";
 
 Want to compare the speed of these? Check this guy out: [http://jsperf.com/setting-multiple-css-properties](http://jsperf.com/setting-multiple-css-properties).
 
-#### Want more? see [YouMightNotNeedjQuery](http://youmightnotneedjquery.com/)
+#### Want more? see [YouMightNotNeedjQuery](http://youmightnotneedjquery.com/) [Vanilla-js](http://vanilla-js.com/)
 
 ## The Triforce - Promises, Pubsub, and Client-side Routing
 
